@@ -1,5 +1,6 @@
 # cms_opendata
 This repository contains the cms opendata analysis using docker container.
+Install the Docker container from the official page of Docker **https://docs.docker.com/engine/install/ubuntu/**
 ```
 mkdir cms_opendata_work
 chmod -R 777 cms_opendata_work
