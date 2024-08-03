@@ -25,6 +25,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 sudo docker run hello-world
 ```
+#### Using Docker with the CMS Open data
 ```
 mkdir cms_opendata_work
 chmod -R 777 cms_opendata_work
