@@ -69,7 +69,7 @@ There is no need to use the CMS virtual machine or docker container to analyze t
    ```
    cernopendata-client download-files --doi 10.7483/OPENDATA.CMS.TTK7.008J
    ```
-4) To download specific number of data files use
+4) To download data files use
    ```
    cernopendata-client download-files --recid 5500 --filter-name file1.root, file2.root, ...
    ```
