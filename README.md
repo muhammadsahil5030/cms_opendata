@@ -1,5 +1,5 @@
 # cms_opendata
-## This repository contains the cms opendata analysis using docker container.
+
 #### Install the Docker container from the official page of Docker **https://docs.docker.com/engine/install**
 #### Installing in Ubuntu 20.04
 1) Set up Docker's apt repository.
@@ -52,3 +52,24 @@ Run the cms executable
 ```
 cmsRun DemoAnalyzer/python/ConfFile_cfg.py
 ```
+## CMS NanoAOD Open Data
+There is no need to use the CMS virtual machine or docker container to analyze the NanoAOD data but simply use C++ or Python script to analyze the ROOT file because the data is stored in ROOT TTree
+
+#### Downloading the data on local machine
+1) Install cern opendata-client using PyPI or Docker
+   ```
+   pip install --user cernopendata-client
+   ```
+2) The data files are available at **https://opendata.cern.ch**. We can listing the data files using record id (recid) or by digital object identifier (doi) number.
+   ```
+   cernopendata-client get-file-locations --doi 10.7483/OPENDATA.CMS.TTK7.008J
+   cernopendata-client get-file-locations --recid 1
+   ```
+3) Downloading data files using doi
+   ```
+   cernopendata-client download-files --doi 10.7483/OPENDATA.CMS.TTK7.008J
+   ```
+4) To download specific number of data files use
+   ```
+   cernopendata-client download-files --recid 5500 --filter-name file1.root, file2.root, ...
+   ```
