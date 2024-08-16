@@ -73,3 +73,4 @@ There is no need to use the CMS virtual machine or docker container to analyze t
    ```
    cernopendata-client download-files --recid 5500 --filter-name file1.root, file2.root, ...
    ```
+5) Use the link "**https://opendata.cern.ch/record/1059**" to find the luminosity of the given file.
